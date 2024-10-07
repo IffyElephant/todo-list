@@ -1,0 +1,22 @@
+body {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to right top, #240f37, #5d1f49, #93374f, #bf5c4d, #da8c49, #e39449, #ec9c48, #f4a547, #f9804f, #f25b61, #dd3c78, #b92e8f);
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -30rem;
+  width: 100rem;
+  height: 100rem;
+  filter: brightness(100) opacity(0.10);
+  background-image: url(../public/background-shape.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

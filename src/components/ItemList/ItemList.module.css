@@ -1,0 +1,81 @@
+.container {
+    display: relative;
+}
+
+.list {
+    position: relative;
+    margin: 2rem 2rem;
+    padding: 2rem;
+    max-height: 27rem;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 1rem;
+}
+  
+.list::-webkit-scrollbar-track {
+    background-color: #ffffff33;
+    border-radius: 1rem; 
+}
+   
+.list::-webkit-scrollbar-thumb {
+    background-color: #5d1f4960;
+    border-radius: 1rem;
+}
+  
+.list::-webkit-scrollbar-thumb:hover {
+    background-color: #b92e8f;
+}
+
+.button {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    padding: 1rem;
+    border: none;
+    border: solid white 0.15rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right top, #240f37, #5d1f49, #93374f, #bf5c4d, #da8c49, #e39449, #ec9c48, #f4a547, #f9804f, #f25b61, #dd3c78, #b92e8f);
+    background-size: 500px 500px;
+
+    transition: background-position 0.33s ease-in-out, border 0.33s ease;
+    background-position: 0px 0px;
+}
+
+.button:hover {
+    border: solid #b92e8f 0.15rem;
+    background-position: 0px -400px;
+}
+
+.image {
+    width: 2rem;
+    filter: brightness(100);
+}
+
+.filter {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.filter_option {
+    flex: 1;
+    padding: 1rem;
+    margin: 0 1rem;
+
+    border-radius: 2rem;
+    border: solid white 0.125rem;
+    color: white;
+    font-size: 1.5rem;
+    background-color: transparent;
+    transition: box-shadow, background-color 0.3s ease;
+}
+
+.filter_option.active, .filter_option:hover {
+    background-color: #dd3c78;
+    box-shadow: 0rem 0rem 0.5rem white ;
+}
