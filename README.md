@@ -14,7 +14,7 @@ This project was created to refresh my memory on React while traveling by train 
 
 ## Installation
 
-To get started with the ToDo List application, follow these steps:
+To get started with the ToDo List application, follow these steps using `yarn`:
 
 1. Clone the repository:
    ```bash
@@ -24,13 +24,13 @@ To get started with the ToDo List application, follow these steps:
    ```bash
    cd todo-list
    ```
-4. Install the dependencies:
+3. Install the dependencies:
    ```bash
-   npm install
+   yarn install
    ```
-6. Start the application:
+4. Start the application:
    ```bash
-   npm start
+   yarn start
    ```
 
 ## Usage
